@@ -3,22 +3,22 @@ Helping out Santa Claus by creating a persistence layer to manage a gift list fo
 
 Implemented using Spring and MyBatis. Consisting of the following business objects:
 
-Child (id: int, name: String; hasOne: Address, hasMany: Gifts)
-Address (id: int, text: String)
+Child (id: int, name: String; hasOne: Address, hasMany: Gifts)<br>
+Address (id: int, text: String)<br>
 Gift (id: int, description: String)
 
 ChildrenDAO:
-void addChild(Child child);
-void removeChild(Child child);
-void updateChild(Child child);
-Child getChildById(int id);
-Child getAllChildren();
-void addGift(Child child, Gift gift);
-void removeGift(Child child, Gift gift);
+* void addChild(Child child);
+* void removeChild(Child child);
+* void updateChild(Child child);
+* Child getChildById(int id);
+* Child getAllChildren();
+* void addGift(Child child, Gift gift);
+* void removeGift(Child child, Gift gift);
 
 AddressDAO:
-void addAddress(Address address);
-void removeAddress(Address address);
-void updateAddress(Address address);
-Child getAddressById(int id);
-Child getAllAddresses();
+* void addAddress(Address address);
+* void removeAddress(Address address);
+* void updateAddress(Address address);
+* Child getAddressById(int id);
+* Child getAllAddresses();
